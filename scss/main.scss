@@ -1,0 +1,15 @@
+@use 'variables' as *;
+@use 'base';
+@use 'header';
+
+// Основные стили
+body {
+    font-family: 'Arial', sans-serif;
+    // Используем переменную из _variables.scss
+    color: $text-color;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}

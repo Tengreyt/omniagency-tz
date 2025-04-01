@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__row">
+                <!-- Логотип -->
+                <a href="/" class="header__logo"></a>
+                
+                <!-- Основное меню -->
+                <nav class="header__nav">
+                    <ul class="header__menu">
+                        <li class="menu-item-has-children">
+                            <a href="#">Каталог</a>
+                            <ul class="sub-menu">
+                              <li><a href="#">Экскаваторы</a></li>
+                              <li><a href="#">Погрузчики</a></li>
+                              <li><a href="#">Бульдозеры</a></li>
+                              <li><a href="#">Краны</a></li>
+                            </ul>
+                          </li>
+                        <li class="menu-item-has-children">
+                            <a href="#">О заводе</a>
+                            <ul class="sub-menu">
+                              <li><a href="#">Новости</a></li>
+                              <li><a href="#">Вакансии</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Техника в наличии</a></li>
+                        <li class="menu-item-has-children">
+                            <a href="#">Сервис и гарантия</a>
+                            <ul class="sub-menu">
+                              <li><a href="#">Отзывы</a></li>
+                              <li><a href="#">Гарантийное обслуживание</a></li>
+                              <li><a href="#">Доставка</a></li>
+                              <li><a href="#">Документы и сертификаты</a></li>
+                              <li><a href="#">Сервисные центры</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Покупателям</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Правая часть -->
+                <div class="header__right">
+                    <!-- Переключатель (язык/тема) -->
+                    
+                    <!-- Контакты и кнопка -->
+                    <div class="header__contacts">
+                        <a href="tel:88007777777" class="header__phone">8 (800) 777-77-77</a>
+                        <button class="header__callback btn">Заказать звонок</button>
+                    </div>
+                </div>
+                <!-- Переключатель языка -->
+                <!-- Добавьте data-lang для управления через CSS -->
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="ru">RU</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <span class="slider"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script type="module" src="./assets/js/index.js"></script>
+</body>
+</html>
