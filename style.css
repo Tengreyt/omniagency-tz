@@ -196,6 +196,99 @@
 .header .lang-btn:not(.active) {
   color: rgba(255, 255, 255, 0.6);
 }
+.header .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.header .modal-overlay.active {
+  display: flex;
+}
+.header .modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 450px;
+  position: relative;
+}
+.header .modal-content h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.header .modal-content p {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #666;
+}
+.header .modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #999;
+}
+.header .modal-close:hover {
+  color: #333;
+}
+.header .callback-form .form-group {
+  margin-bottom: 20px;
+}
+.header .callback-form .form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.header .callback-form .form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+.header .checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.header .checkbox-group input {
+  margin-right: 10px;
+}
+.header .checkbox-group label {
+  font-size: 14px;
+}
+.header .checkbox-group label a {
+  color: #007bff;
+  text-decoration: none;
+}
+.header .checkbox-group label a:hover {
+  text-decoration: underline;
+}
+.header .submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.header .submit-btn:hover {
+  background: #0069d9;
+}
 
 @media (max-width: 1280px) {
   .header {
